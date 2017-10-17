@@ -1,0 +1,6 @@
+*.pyc
+*.pyo
+flask
+node_modules/
+
+env/

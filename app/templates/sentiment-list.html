@@ -1,0 +1,13 @@
+{%extends "index.html"%}
+{%block content%}
+<div class="result__container">
+  <h2>Analysis for "<i>{{ search_tweets }}</i> " </h2>
+  <p>
+    {{ generate_polarity_label }} <br>
+    {{ percentage_neutral }}% of collected data are Neutral <br>
+    {{ percentage_positive }}% of collected data are Positive <br>
+    {{ percentage_negative }}% of collected data are Negative <br>
+  </p>
+  <p>Calculation based on {{ public_tweets }} tweet collected</p>
+</div>
+{%endblock%}

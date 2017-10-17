@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterSentimentAnalysis</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__headlines">
+        <img class="headlines__logo" src="static/images/Twitter_Logo_Blue.svg" />
+        <p class="headlines__title">Twitter Sentiment Analysis<p>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="{{ url_for('index')}}" class="navigation__link">Search</a></li>
+          <li class="navigation__item"><a href="{{ url_for('list')}}" class="navigation__link">Result</a></li>
+        </ul>
+      </nav>
+      {%block content%}
+      {%endblock%}
+    </div>
+
+  </body>
+</html>
