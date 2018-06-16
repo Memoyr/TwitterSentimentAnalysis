@@ -11,7 +11,7 @@ User search for keywords on Twitter and will receive :
 - the average feeling polarity as a label (Positive, Neutral, Negative)
 - % of each label Types
 
-- It's also create a new textfile with a list of all polarity collected.
+- It also create a new textfile with a list of all polarity collected.
 
 ## Install
 Make a new virtualenv: ```virtualenv env```
